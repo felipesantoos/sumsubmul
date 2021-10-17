@@ -15,7 +15,7 @@ function HomePage() {
         setNumber(number - 1);
     }
 
-    function mult() {
+    function mul() {
         setNumber(number * 2);
     }
 
@@ -37,7 +37,7 @@ function HomePage() {
                 <Button 
                     text="Multiplicar por 2" 
                     backgroundColor="blue"
-                    onClick={mult} 
+                    onClick={mul} 
                 />
             </div>
         </div>
