@@ -1,0 +1,24 @@
+@font-face {
+  src: url("../../assets/fonts/Poppins-Regular.ttf");
+  font-family: "titles";
+}
+
+@font-face {
+  src: url("../../assets/fonts/OpenSans-Regular.ttf");
+  font-family: "elements";
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+html, body, #root {
+  width: 100%;
+  height: 100%;
+  font-family: "elements";
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: "titles";
+}

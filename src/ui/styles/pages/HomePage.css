@@ -1,0 +1,24 @@
+#home-page {
+    height: 100%;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+#home-page h1 {
+    font-size: 4rem;
+}
+
+#home-page span {
+    font-size: 2rem;
+}
+
+#home-page .action-btns {
+    margin-top: 1.5rem;
+}
+
+#home-page .action-btns button:not(:first-child) {
+    margin-left: 1rem;
+}
