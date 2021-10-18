@@ -6,21 +6,21 @@ interface ButtonProps {
     onClick(): void;
 }
 
-function Button(props: ButtonProps) {
+function Button({ text, backgroundColor, onClick }: ButtonProps) {
 
     const inlineStyles: Record<string, string | number> = {};
 
-    if (props.backgroundColor) {
-        inlineStyles.backgroundColor = props.backgroundColor;
+    if (backgroundColor) {
+        inlineStyles.backgroundColor = backgroundColor;
     }
 
     return (
         <button 
             className="defaultButton"
             style={inlineStyles} 
-            onClick={props.onClick}
+            onClick={onClick}
         >
-            {props.text}
+            {text}
         </button>
     );
 }
