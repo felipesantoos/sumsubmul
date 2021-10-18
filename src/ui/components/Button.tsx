@@ -1,12 +1,13 @@
+import { ReactNode } from "react";
 import "../styles/components/Button.css";
 
 interface ButtonProps {
-    text?: string;
+    children?: ReactNode;
     backgroundColor?: string;
     onClick(): void;
 }
 
-function Button({ text, backgroundColor, onClick }: ButtonProps) {
+function Button({ children, backgroundColor, onClick }: ButtonProps) {
 
     const inlineStyles: Record<string, string | number> = {};
 
@@ -20,7 +21,7 @@ function Button({ text, backgroundColor, onClick }: ButtonProps) {
             style={inlineStyles} 
             onClick={onClick}
         >
-            {text}
+            {children}
         </button>
     );
 }

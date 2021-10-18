@@ -24,21 +24,15 @@ function HomePage() {
             <h1>Contador</h1>
             <span>{number}</span>
             <div className="action-btns">
-                <Button 
-                    text="Somar 1" 
-                    backgroundColor="green"
-                    onClick={sum} 
-                />
-                <Button 
-                    text="Subtrair 1" 
-                    backgroundColor="red"
-                    onClick={sub} 
-                />
-                <Button 
-                    text="Multiplicar por 2" 
-                    backgroundColor="blue"
-                    onClick={mul} 
-                />
+                <Button backgroundColor="green" onClick={sum}>
+                    Somar 1
+                </Button>
+                <Button backgroundColor="red" onClick={sub}>
+                    Subtrair 1
+                </Button>
+                <Button backgroundColor="blue" onClick={mul}>
+                    Multiplicar por 2
+                </Button>
             </div>
         </div>
     );
